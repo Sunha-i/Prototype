@@ -2,6 +2,8 @@
 
 
 #include "PTAnimInstance.h"
+#include "GameFramework/Character.h"
+#include "GameFramework/CharacterMovementComponent.h"
 
 UPTAnimInstance::UPTAnimInstance()
 	: CurrentPawnSpeed(0.0f)

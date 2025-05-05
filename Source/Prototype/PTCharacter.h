@@ -2,8 +2,10 @@
 
 #pragma once
 
-#include "Prototype.h"
+#include "CoreMinimal.h"
+#include "Camera/CameraComponent.h"
 #include "GameFramework/Character.h"
+#include "GameFramework/SpringArmComponent.h"
 #include "InputActionValue.h"
 #include "PTCharacter.generated.h"
 

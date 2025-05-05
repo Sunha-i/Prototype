@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "Prototype.h"
+#include "CoreMinimal.h"
 #include "GameFramework/PlayerController.h"
 #include "PTPlayerController.generated.h"
 

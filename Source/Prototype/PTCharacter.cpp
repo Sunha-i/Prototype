@@ -2,9 +2,12 @@
 
 
 #include "PTCharacter.h"
+#include "Components/CapsuleComponent.h"
 #include "EnhancedInputComponent.h"
 #include "EnhancedInputSubsystems.h"
+#include "GameFramework/CharacterMovementComponent.h"
 #include "InputMappingContext.h"
+#include "Prototype.h"
 
 // Sets default values
 APTCharacter::APTCharacter()
@@ -147,12 +150,12 @@ void APTCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompone
 void APTCharacter::PostInitializeComponents()
 {
 	Super::PostInitializeComponents();
-	UE_LOG(Prototype, Warning, TEXT("%s"), *FString(__FUNCTION__));
+	PTLOG_S(Log);
 }
 
 void APTCharacter::PossessedBy(AController* NewController)
 {
-	UE_LOG(Prototype, Warning, TEXT("%s"), *FString(__FUNCTION__));
+	PTLOG_S(Log);
 	Super::PossessedBy(NewController);
 }
 

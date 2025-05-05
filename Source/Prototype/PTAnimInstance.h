@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "Prototype.h"
+#include "CoreMinimal.h"
 #include "Animation/AnimInstance.h"
 #include "PTAnimInstance.generated.h"
 

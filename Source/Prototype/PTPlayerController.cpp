@@ -2,23 +2,26 @@
 
 
 #include "PTPlayerController.h"
+#include "Prototype.h"
 
 void APTPlayerController::BeginPlay()
 {
+	PTLOG(Warning, TEXT("%s"), TEXT("Begin"));
 	Super::BeginPlay();
 
 	FInputModeGameOnly InputMode;
 	SetInputMode(InputMode);
+	PTLOG(Warning, TEXT("%s"), TEXT("Begin"));
 }
 
 void APTPlayerController::PostInitializeComponents()
 {
 	Super::PostInitializeComponents();
-	UE_LOG(Prototype, Warning, TEXT("%s"), *FString(__FUNCTION__));
+	PTLOG_S(Log);
 }
 
 void APTPlayerController::OnPossess(APawn* aPawn)
 {
-	UE_LOG(Prototype, Warning, TEXT("%s"), *FString(__FUNCTION__));
+	PTLOG_S(Log);
 	Super::OnPossess(aPawn);
 }
